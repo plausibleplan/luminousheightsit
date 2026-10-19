@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luminous Heights IT</title>
+<meta name="description" content="Luminous Heights IT: independent software development and database consulting since 2015. Makers of Certain Death.">
+<link rel="canonical" href="https://luminousheightsit.ca/">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --brand: #7f28ff;
+    --brand-soft: #f1e8ff;
+    --bg: #ffffff;
+    --bg-alt: #f8f6fc;
+    --text: #1d1828;
+    --muted: #5e5870;
+    --line: #e4dff0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --brand: #a56bff;
+      --brand-soft: #2a1c45;
+      --bg: #141119;
+      --bg-alt: #1b1722;
+      --text: #ece8f4;
+      --muted: #a8a1b8;
+      --line: #302a3c;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 Inter, system-ui, -apple-system, sans-serif;
+  }
+  a { color: var(--brand); }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  h1, h2, h3 { font-family: 'Black Han Sans', Inter, sans-serif; font-weight: 400; line-height: 1.15; letter-spacing: .01em; }
+  h2 { font-size: 2rem; margin: 0 0 .4em; }
+  h3 { font-size: 1.25rem; margin: 0 0 .3em; }
+
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; }
+  .brand { font-family: 'Black Han Sans', Inter, sans-serif; font-size: 1.3rem; color: var(--brand); text-decoration: none; }
+  nav { display: flex; gap: 4px 20px; flex-wrap: wrap; font-weight: 500; }
+  nav a { color: var(--text); text-decoration: none; }
+  nav a:hover { color: var(--brand); }
+
+  .hero { padding: 72px 0 64px; }
+  .hero h1 { margin: 0 0 32px; }
+  .hero h1 img { width: min(440px, 100%); display: block; }
+  .hero p { font-size: 1.25rem; color: var(--muted); max-width: 40em; margin: 0; }
+
+  section { padding: 64px 0; border-top: 1px solid var(--line); }
+  section.alt { background: var(--bg-alt); }
+  .lead { color: var(--muted); max-width: 42em; margin: 0 0 32px; }
+
+  .app { display: flex; gap: 28px; align-items: flex-start; }
+  .app img { width: 112px; height: 112px; border-radius: 24px; flex: none; }
+  .app p { margin: 0 0 .8em; }
+  .links { display: flex; gap: 16px; flex-wrap: wrap; font-weight: 500; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+  .card { background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 22px; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
+  .tags span { background: var(--brand-soft); color: var(--brand); border-radius: 999px; padding: 4px 12px; font-size: .9rem; font-weight: 500; }
+
+  .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+  .contact address { font-style: normal; }
+  .label { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); font-weight: 600; margin-bottom: 4px; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0; color: var(--muted); font-size: .9rem; }
+
+  @media (max-width: 600px) {
+    header .wrap { flex-direction: column; align-items: flex-start; }
+    .hero { padding: 48px 0; }
+    .app { flex-direction: column; }
+    h2 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="brand">Luminous Heights IT</a>
+    <nav>
+      <a href="#apps">Apps</a>
+      <a href="#database">Database services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <h1><img src="logo.svg" alt="Luminous Heights IT"></h1>
+      <p>Independent software development and database consulting. We make games for Android and iOS, and help teams keep their databases fast, safe and recoverable.</p>
+    </div>
+  </div>
+
+  <section id="apps" class="alt">
+    <div class="wrap">
+      <h2>Apps &amp; games</h2>
+      <p class="lead">Published under our Plausible Plan label.</p>
+      <div class="app">
+        <img src="certain-death-icon.png" alt="Certain Death app icon">
+        <div>
+          <h3>Certain Death</h3>
+          <p>A chaotic shedding card game with stacking penalties and dirty-trick cards. Play 1 to 7 computer opponents, unlock achievements and climb a leaderboard where every match is replayed and verified. No ads, ever.</p>
+          <p>English and Brazilian Portuguese · Android, with iOS to follow.</p>
+          <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.plausibleplan.certaindeath">Google Play</a>
+            <a href="https://plausibleplan.ca/certain-death/privacy/">Privacy policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="database">
+    <div class="wrap">
+      <h2>Database services</h2>
+      <p class="lead">Twenty years of hands-on database administration across government, health data, telecom and SaaS: Oracle, SQL Server, PostgreSQL and MySQL, on premises and on AWS. Remote, by the project or on retainer.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Performance tuning</h3>
+          <p>Slow queries, blocking and waits found and fixed: execution plans, indexing, statistics and instance configuration.</p>
+        </div>
+        <div class="card">
+          <h3>High availability &amp; DR</h3>
+          <p>Oracle RAC and Data Guard, Aurora and RDS, and backup and recovery that is tested rather than assumed, sized to how long you can afford to be down.</p>
+        </div>
+        <div class="card">
+          <h3>Cloud migrations</h3>
+          <p>On-premises to AWS moves and version upgrades, up to multi-terabyte Oracle Exadata, planned and rehearsed so the cut-over is uneventful.</p>
+        </div>
+        <div class="card">
+          <h3>AWS data platforms</h3>
+          <p>Serverless pipelines and self-service analytics with Glue, Lambda, Athena, Redshift and S3, taking load and cost off your transactional databases.</p>
+        </div>
+        <div class="card">
+          <h3>Health checks &amp; governance</h3>
+          <p>A written review of security, configuration, capacity and standards, with the documentation auditors ask for, such as ISO 27001.</p>
+        </div>
+        <div class="card">
+          <h3>Automation &amp; ETL</h3>
+          <p>PL/SQL, T-SQL and shell scripting for monitoring, maintenance and data loads, so routine work runs itself.</p>
+        </div>
+      </div>
+      <div class="tags">
+        <span>Oracle</span>
+        <span>SQL Server</span>
+        <span>PostgreSQL / Aurora</span>
+        <span>MySQL</span>
+        <span>AWS</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="alt">
+    <div class="wrap">
+      <h2>About</h2>
+      <p class="lead">Luminous Heights IT was founded in 2015 in Canada to build a game for a friend. Today it is a small independent studio and consultancy: we make our own games under the Plausible Plan label, and bring twenty years of database administration experience to clients who need their data fast, safe and always recoverable.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div>
+          <div class="label">Email</div>
+          <a href="mailto:contact@luminousheightsit.ca">contact@luminousheightsit.ca</a>
+        </div>
+        <div>
+          <div class="label">Mailing address</div>
+          <address>
+            Luminous Heights IT<br>
+            Mozart Archilla<br>
+            56A Mill St E, Unit #981<br>
+            Acton, ON L7J 1H3<br>
+            Canada
+          </address>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2015–2026 Luminous Heights IT</div>
+</footer>
+
+</body>
+</html>
